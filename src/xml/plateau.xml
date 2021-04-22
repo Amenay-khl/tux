@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<pl:plateau xmlns:pl="http://myGame/tux"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://myGame/tux plateau.xsd">
+    <pl:dimension>
+        <pl:height>60</pl:height>
+        <pl:width>100</pl:width>
+        <pl:depth>100</pl:depth>
+    </pl:dimension>
+    <pl:mapping>
+        <pl:textureBottom>textures/floor/snow1.png</pl:textureBottom>
+        <pl:textureEast>textures/skybox/interstellar/east.png</pl:textureEast>
+        <pl:textureWest>textures/skybox/interstellar/west.png</pl:textureWest>
+        <pl:textureNorth>textures/skybox/interstellar/north.png</pl:textureNorth>
+    </pl:mapping>
+    <pl:pion>
+        une url
+    </pl:pion>
+</pl:plateau>

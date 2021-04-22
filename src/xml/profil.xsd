@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           targetNamespace = "http://myGame/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tux="http://myGame/tux"
+           elementFormDefault="qualified">
+    <xs:include schemaLocation="dico.xsd"/>
+    <xs:element name="profil" type="tux:Profil"/>
+    
+    <xs:complexType name="Profil">
+        <xs:all>
+            <xs:element name="nom" type="xs:string" />
+            <xs:element name="avatar" type="tux:typeIMG"/>
+            <xs:element name="anniversaire" type="xs:date"/>
+            <xs:element name="parties" type="tux:Parties" />
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="Parties">
+        <xs:sequence>
+            <xs:element name="partie" type="tux:Partie" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Partie">
+        <xs:all>
+            <xs:element name="temps" type="xs:double" minOccurs="0" maxOccurs="1" />
+            <xs:element name="mot" type="tux:Mot" />
+        </xs:all>
+        <xs:attribute name="date" type="xs:date"/>
+        <xs:attribute name="trouvé" type="xs:string" use="optional"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="typeIMG">
+        <xs:restriction base = "xs:string">
+            <xs:pattern value="[\S]+[.]png|[\S]+[.]jpg"/>
+        </xs:restriction >
+    </xs:simpleType>
+</xs:schema>

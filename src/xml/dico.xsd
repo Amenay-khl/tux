@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           targetNamespace = "http://myGame/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tux="http://myGame/tux"
+           elementFormDefault="qualified">
+
+    <xs:element name="dictionnaire" type="tux:Dictionnaire"/>
+    
+    <xs:complexType name="Dictionnaire">
+        <xs:sequence>
+            <xs:element name="mot" type="tux:Mot" minOccurs="1" maxOccurs="unbounded">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="Pattern">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z]){2,30}[-]([a-zA-Z]){2,30}|([a-zA-Z]{2,30})"/>
+        </xs:restriction>
+    </xs:simpleType>
+                    
+    <xs:complexType name="Mot">
+        <xs:simpleContent>            
+            <xs:extension base="tux:Pattern">
+                <xs:attribute name="niveau" type="tux:Niveau" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>  
+    </xs:complexType>
+                
+    <xs:simpleType name="Niveau">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+        
+    
+</xs:schema>

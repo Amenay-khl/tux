@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="profil.xsl"?> <!--Fonctionne pas -->
+<!-- 
+   Document   : save_example.xml.xml
+   Created on : August 31, 2014, 3:31 PM
+   Author     : Johan Sarrazin / Céline Fouard / Nicolas Glade
+   Description:
+       Purpose of the document follows.
+-->
+<pr:profil xmlns:pr="http://myGame/tux"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://myGame/tux profil.xsd">
+    <pr:nom>Alban</pr:nom>
+    <pr:avatar>conan.jpg</pr:avatar>
+    <pr:anniversaire>2006-05-08</pr:anniversaire>
+    <pr:parties>
+        <pr:partie date="2013-12-10">
+            <pr:temps>20.0</pr:temps>
+            <pr:mot niveau="1">cle</pr:mot>
+        </pr:partie>
+        <pr:partie date="2013-12-11" trouvé="75%">
+            <pr:mot niveau="2">indice</pr:mot>
+        </pr:partie>
+        <pr:partie date="2013-12-11">
+            <pr:temps>20.0</pr:temps>
+            <pr:mot niveau="2">indice</pr:mot>
+        </pr:partie>
+    </pr:parties>
+</pr:profil>

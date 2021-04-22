@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--><ns1:dictionnaire xmlns:ns1="http://myGame/tux" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux dico.xsd">
+<ns1:mot niveau="1">vider</ns1:mot>
+<ns1:mot niveau="1">salut</ns1:mot>
+<ns1:mot niveau="1">test</ns1:mot>
+<ns1:mot niveau="1">ah</ns1:mot>
+<ns1:mot niveau="1">bye</ns1:mot>
+<ns1:mot niveau="1">ok</ns1:mot>
+<ns1:mot niveau="1">vien</ns1:mot>
+<ns1:mot niveau="2">entrer</ns1:mot>
+<ns1:mot niveau="2">manger</ns1:mot>
+<ns1:mot niveau="2">bouger</ns1:mot>
+<ns1:mot niveau="2">sante</ns1:mot>
+<ns1:mot niveau="2">tirer</ns1:mot>
+<ns1:mot niveau="2">parler</ns1:mot>
+<ns1:mot niveau="2">rentrer</ns1:mot>
+<ns1:mot niveau="3">labourer</ns1:mot>
+<ns1:mot niveau="3">savourer</ns1:mot>
+<ns1:mot niveau="3">partager</ns1:mot>
+<ns1:mot niveau="3">solide</ns1:mot>
+<ns1:mot niveau="3">liquide</ns1:mot>
+<ns1:mot niveau="4">pacifiste</ns1:mot>
+<ns1:mot niveau="4">rencontrer</ns1:mot>
+<ns1:mot niveau="4">abdominal</ns1:mot>
+<ns1:mot niveau="4">participer</ns1:mot>
+<ns1:mot niveau="5">philosophie</ns1:mot>
+<ns1:mot niveau="5">particulier</ns1:mot>
+<ns1:mot niveau="5">solliciter</ns1:mot>
+<ns1:mot niveau="5">solidifier</ns1:mot>
+<ns1:mot niveau="1">paf</ns1:mot>
+<ns1:mot niveau="3">bonsoir</ns1:mot>
+<ns1:mot niveau="4">balancer</ns1:mot>
+</ns1:dictionnaire>

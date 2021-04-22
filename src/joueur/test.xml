@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pr:profil xmlns:pr="http://myGame/tux" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux ../xml/profil.xsd">
+    <pr:nom>test</pr:nom>
+    <pr:avatar>avatar.jpg</pr:avatar>
+    <pr:anniversaire>2020-07-12</pr:anniversaire>
+    <pr:parties>
+        <pr:partie date="2020-12-03">
+            <pr:temps>4</pr:temps>
+            <pr:mot niveau="1">vider</pr:mot>
+        </pr:partie>
+        <pr:partie date="2020-12-03" trouvé="83%">
+            <pr:mot niveau="2">entrer</pr:mot>
+        </pr:partie>
+        <pr:partie date="2020-12-03" trouvé="80%">
+            <pr:mot niveau="-1">error</pr:mot>
+        </pr:partie>
+        <pr:partie date="2020-12-03">
+            <pr:temps>-1</pr:temps>
+            <pr:mot niveau="5">solidifier</pr:mot>
+        </pr:partie>
+    <pr:partie date="2020-12-03">
+            <pr:temps>5</pr:temps>
+            <pr:mot niveau="2">sante</pr:mot>
+        </pr:partie>
+    </pr:parties>
+</pr:profil>
